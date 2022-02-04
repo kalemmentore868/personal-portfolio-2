@@ -1,11 +1,13 @@
-import Acomplishments from '../components/Acomplishments/Acomplishments';
-import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
-import Hero from '../components/Hero/Hero';
-import Projects from '../components/Projects/Projects';
-import Technologies from '../components/Technologies/Technologies';
-import Timeline from '../components/TimeLine/TimeLine';
-import { Layout } from '../layout/Layout';
-import { Section } from '../styles/GlobalComponents';
+import Acomplishments from "../components/Acomplishments/Acomplishments";
+import BgAnimation from "../components/BackgrooundAnimation/BackgroundAnimation";
+import ContactForm from "../components/ContactForm/ContactForm";
+import Hero from "../components/Hero/Hero";
+import Projects from "../components/Projects/Projects";
+import Technologies from "../components/Technologies/Technologies";
+import Timeline from "../components/TimeLine/TimeLine";
+import WaterRippleAnimation from "../components/WaterRippleAnimation/WaterRippleAnimation";
+import { Layout } from "../layout/Layout";
+import { Section } from "../styles/GlobalComponents";
 
 const Home = () => {
   return (
@@ -15,9 +17,14 @@ const Home = () => {
         <BgAnimation />
       </Section>
       <Projects />
-      <Technologies />
+      <Section grid>
+        <Technologies />
+        <WaterRippleAnimation />
+      </Section>
+
       <Timeline />
       <Acomplishments />
+      <ContactForm />
     </Layout>
   );
 };

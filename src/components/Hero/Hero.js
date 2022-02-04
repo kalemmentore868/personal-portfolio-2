@@ -1,21 +1,32 @@
-import React from 'react';
+import React from "react";
+import Link from "next/link";
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+// import Button from "../../styles/GlobalComponents/Button";
+import RippleAnimation from "../RippleAnimation/RippleAnimation";
+
+import { LeftSection, ContactLink } from "./HeroStyles";
 
 const Hero = (props) => (
   <>
     <Section row nopadding>
       <LeftSection>
+        <RippleAnimation />
         <SectionTitle main center>
-          Welcome To <br />
-          My Personal Portfolio
+          My Portfolio Website
         </SectionTitle>
         <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+          My name is Kalem Mentore. A Fullstack MERN developer based in Trinidad
+          and Tobago.
         </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
+        <Link href="#contact">
+          <ContactLink>More Info</ContactLink>
+        </Link>
+        {/* <Button onClick={props.handleClick}>Learn More</Button> */}
       </LeftSection>
     </Section>
   </>
