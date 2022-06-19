@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
-import PropicCube from "../ThreeDObjects/PropicCube";
 
 import {
   Container,
@@ -15,12 +14,12 @@ import {
 
 const Header = () => (
   <Container>
-    {/* <Div1>
+    <Div1>
       <Link href="/">
-        <NavImg src="/images/propic.jpg" />
+        <NavImg src="/propic.jpg" />
       </Link>
-    </Div1> */}
-    <PropicCube />
+    </Div1>
+
     <Div2>
       <li>
         <Link href="#projects">

@@ -1,5 +1,5 @@
 import React from "react";
-import { DiFirebase, DiReact, DiZend } from "react-icons/di";
+import { DiFirebase, DiReact, DiMongodb } from "react-icons/di";
 import {
   Section,
   SectionDivider,
@@ -22,8 +22,8 @@ const Technologies = () => (
       <SectionDivider divider />
       <SectionTitle>Technologies</SectionTitle>
       <SectionText>
-        I've worked with a range a technologies in the web development world.
-        From Back-end and Databases To Front-end and Design.
+        I've worked with a range of technologies in the web development world.
+        From Back-end and Databases To Front-end.
       </SectionText>
       <List>
         <ListItem>
@@ -46,19 +46,20 @@ const Technologies = () => (
             <ListTitle>Back-End</ListTitle>
             <ListParagraph>
               Experience with <br />
-              Node and Databases like MongoDB
+              Node.js and frameworks like express and next.js
             </ListParagraph>
           </ListContainer>
         </ListItem>
         <ListItem>
           <picture>
-            <DiZend size="3rem" />
+            <DiMongodb size="3rem" />
           </picture>
           <ListContainer>
-            <ListTitle>UI/UX</ListTitle>
+            <ListTitle>Databases</ListTitle>
             <ListParagraph>
               Experience with <br />
-              tools like Figma
+              NoSQL Databases like MongoDb as well as SQL Databases like
+              PostGres
             </ListParagraph>
           </ListContainer>
         </ListItem>

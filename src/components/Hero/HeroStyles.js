@@ -1,5 +1,10 @@
 import styled, { keyframes } from "styled-components";
 
+export const MatrixBackground = styled.div`
+  background: url("/matrix-background.webp");
+  background-size: 100vw;
+`;
+
 export const LeftSection = styled.div`
   width: 100%;
   @media ${(props) => props.theme.breakpoints.sm} {
